@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="assets/github-logo.png" type="image/x-icon">
+
+    <!-- tailwind + daisy -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
+
+</head>
+<body class="bg-slate-200">
+<header>
+    <section>
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="flex-1">
+                <div class="flex gap-2 items-center">
+                    <div class="w-10">
+                        <img  src="assets/github-logo.png" alt=""> 
+                    </div>
+                    <h2 class="text-2xl font-semibold text-[#1F2937]">GitHub Issues Tracker</h2>
+                </div>
+               
+            </div>
+            <div class="flex gap-2">
+                
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                <div class="dropdown dropdown-end">
+                    <button class="btn btn-primary rounded-sm"><i class="fa-solid fa-plus"></i>New Issue</button>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+
+<main>
+   <section class="my-10 bg-white w-11/12 mx-auto">
+            <div class="space-x-2 p-10">
+                <button id="all-issue-btn"
+                    class="btn btn-primary  text-white px-5">All</button>
+                <button id="open-btn"
+                    class="btn btn-soft">Open</button>
+                <button  id="closed-btn"
+                    class="btn btn-soft">Closed</button>
+            </div>
+        </section>
+
+       <section class="my-10 bg-white w-11/12 mx-auto flex justify-between">
+        <div class="flex gap-2 p-5 items-center"> 
+            <img class="bg-[#ECE4FF] rounded-full p-3" src="assets/Aperture.png" alt="">
+            <div>
+                <h2>50 Issues</h2>
+            <p>Track and manage your project issues</p>
+            </div>
+        </div>
+
+        <div class="flex gap-3 p-5 items-center">
+            <p>open</p>
+            <p>closed</p>
+        </div>
+
+       </section> 
+
+       <section class="my-10 bg-white w-11/12 mx-auto flex justify-between">
+        <div id="card" class="">
+                <div class="flex items-center justify-between p-4">
+                    <img src="assets/Open-Status.png" alt="">
+                    <button class="bg-[#FEECEC] text-red-500 px-5 rounded-full">HIGH</button>
+                </div>
+                <div>
+                    <h2>Fix navigation menu on mobile devices</h2>
+                    <p>The navigation menu doesn't collapse properly on mobile devices...</p>
+                    <button></button>
+                </div>
+
+            </div>
+</section>
+
+       <section class="my-10 bg-white w-11/12 mx-auto flex justify-between">
+         <div id="all-issues-container">
+            
+         </div>
+       </section>
+
+
+</main>
+<script src="script/home.js"></script>
+</body>
+
+</html>
