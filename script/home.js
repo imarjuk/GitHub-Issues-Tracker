@@ -13,7 +13,7 @@ const displayAllIssues=(issues)=>{
         const btnDiv = document.createElement('div');
         btnDiv.innerHTML =`
 
-           <div id="card" class="shadow-md my-4 rounded-lg">
+           <div id="card" class="shadow-md rounded-lg">
                 <div class="flex items-center justify-between p-4">
                     <img src="assets/Open-Status.png" alt="">
                     <button class="bg-[#FEECEC] text-red-500 px-5 rounded-full">${issue.priority}</button>
