@@ -61,9 +61,9 @@
     <main>
         <section class="my-10 bg-white w-11/12 mx-auto">
             <div class="space-x-2 p-10">
-                <button id="all-issue-btn" class="btn btn-primary  text-white px-5">All</button>
-                <button id="open-btn" class="btn btn-soft">Open</button>
-                <button id="closed-btn" class="btn btn-soft">Closed</button>
+                <button id="all-btn" onclick="toggleStyle('all-btn')" class="btn btn-primary  text-white px-5">All</button>
+                <button id="open-btn" onclick="toggleStyle('open-btn')" class="btn btn-soft">Open</button>
+                <button id="closed-btn" onclick="toggleStyle('closed-btn')" class="btn btn-soft">Closed</button>
             </div>
         </section>
 
@@ -71,7 +71,7 @@
             <div class="flex gap-2 p-5 items-center">
                 <img class="bg-[#ECE4FF] rounded-full p-3" src="assets/Aperture.png" alt="">
                 <div>
-                    <h2 class="text-2xl font-semibold">50 Issues</h2>
+                    <h2 id="issue-length" class="text-2xl font-semibold">50 Issues</h2>
                     <p>Track and manage your project issues</p>
                 </div>
             </div>
@@ -111,9 +111,29 @@
         <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
 
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box">
-                <h3 class="text-lg font-bold">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
+            <div id="modal-box" class="modal-box">
+                <h3 class="text-lg font-bold mb-4">Hello!</h3>
+                <span class="bg-green-500 p-1 rounded-full">opened</span>
+                  <div class="my-3">
+                        <button class="btn btn-outline btn-error bg-[#FEECEC] rounded-full"><i
+                                class="fa-light fa-bug"></i>Bug</button>
+                        <button class="btn btn-dash btn-warning bg-[#FFF8DB] rounded-full ml-2"> <i
+                                class="fa-light fa-life-ring"></i>help wanted</button>
+                    </div>
+                    <p>The navigation menu doesn't collapse properly on mobile devices...</p>
+
+                <div class="bg-slate-400 rounded-md p-4 my-4 flex justify-between">
+                    <div>
+                           <p>Assignee</p>
+                           <p class="font-bold"></p>
+                    </div>
+                    <div>
+                           <p>Assignee</p>
+                           <p class="font-bold"></p>
+                    </div>
+                 
+                </div>
+
                 <div class="modal-action">
                     <form method="dialog">
                         <!-- if there is a button in form, it will close the modal -->
