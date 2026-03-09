@@ -30,85 +30,87 @@
     </style>
 
 </head>
+
 <body class="bg-slate-200">
-<header>
-    <section>
-        <div class="navbar bg-base-100 shadow-sm">
-            <div class="flex-1">
-                <div class="flex gap-2 items-center">
-                    <div class="w-10">
-                        <img  src="assets/github-logo.png" alt=""> 
+    <header>
+        <section>
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="flex-1">
+                    <div class="flex gap-2 items-center">
+                        <div class="w-10">
+                            <img src="assets/github-logo.png" alt="">
+                        </div>
+                        <h2 class="text-2xl font-semibold text-[#1F2937]">GitHub Issues Tracker</h2>
                     </div>
-                    <h2 class="text-2xl font-semibold text-[#1F2937]">GitHub Issues Tracker</h2>
+
                 </div>
-               
-            </div>
-            <div class="flex gap-2">
-                
-                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-                <div class="dropdown dropdown-end">
-                    <button class="btn btn-primary rounded-sm"><i class="fa-solid fa-plus"></i>New Issue</button>
-                    
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-</header>
+                <div class="flex gap-2">
+
+                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                    <div class="dropdown dropdown-end">
+                        <button class="btn btn-primary rounded-sm"><i class="fa-solid fa-plus"></i>New Issue</button>
 
 
-<main>
-   <section class="my-10 bg-white w-11/12 mx-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <main>
+        <section class="my-10 bg-white w-11/12 mx-auto">
             <div class="space-x-2 p-10">
-                <button id="all-issue-btn"
-                    class="btn btn-primary  text-white px-5">All</button>
-                <button id="open-btn"
-                    class="btn btn-soft">Open</button>
-                <button  id="closed-btn"
-                    class="btn btn-soft">Closed</button>
+                <button id="all-issue-btn" class="btn btn-primary  text-white px-5">All</button>
+                <button id="open-btn" class="btn btn-soft">Open</button>
+                <button id="closed-btn" class="btn btn-soft">Closed</button>
             </div>
         </section>
 
-       <section class="my-10 bg-white w-11/12 mx-auto flex justify-between">
-        <div class="flex gap-2 p-5 items-center"> 
-            <img class="bg-[#ECE4FF] rounded-full p-3" src="assets/Aperture.png" alt="">
-            <div>
-                <h2>50 Issues</h2>
-            <p>Track and manage your project issues</p>
+        <section class="my-10 bg-white w-11/12 mx-auto flex justify-between">
+            <div class="flex gap-2 p-5 items-center">
+                <img class="bg-[#ECE4FF] rounded-full p-3" src="assets/Aperture.png" alt="">
+                <div>
+                    <h2>50 Issues</h2>
+                    <p>Track and manage your project issues</p>
+                </div>
             </div>
-        </div>
 
-        <div class="flex gap-3 p-5 items-center">
-            <p>open</p>
-            <p>closed</p>
-        </div>
+            <div class="flex gap-3 p-5 items-center">
+                <p>open</p>
+                <p>closed</p>
+            </div>
 
-       </section> 
+        </section>
 
-       <section class="my-10 bg-white w-11/12 mx-auto flex justify-between">
-        <div id="card" class="">
+        <section id="all-issues-container" class="my-10 bg-white w-11/12 mx-auto grid grid-cols-4 gap-5">
+            <!-- <div id="card" class="shadow-md m-4 rounded-lg">
                 <div class="flex items-center justify-between p-4">
                     <img src="assets/Open-Status.png" alt="">
                     <button class="bg-[#FEECEC] text-red-500 px-5 rounded-full">HIGH</button>
                 </div>
-                <div>
-                    <h2>Fix navigation menu on mobile devices</h2>
+                <div class="space-y-2 px-4">
+                    <h2 class="text-2xl font-semibold">Fix navigation menu on mobile devices</h2>
                     <p>The navigation menu doesn't collapse properly on mobile devices...</p>
-                    <button></button>
+                    <div class="mt-3">
+                        <button class="btn btn-outline btn-error bg-[#FEECEC] rounded-full"><i
+                                class="fa-light fa-bug"></i>Bug</button>
+                        <button class="btn btn-dash btn-warning bg-[#FFF8DB] rounded-full ml-2"> <i
+                                class="fa-light fa-life-ring"></i>help wanted</button>
+                    </div>
+
                 </div>
+                <hr class=" my-5 bg-[#E4E4E7]">
 
-            </div>
-</section>
+            </div> -->
+          
+        </section>
 
-       <section class="my-10 bg-white w-11/12 mx-auto flex justify-between">
-         <div id="all-issues-container">
-            
-         </div>
-       </section>
+       
 
 
-</main>
-<script src="script/home.js"></script>
+    </main>
+    <script src="script/home.js"></script>
 </body>
 
 </html>
