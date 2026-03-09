@@ -13,10 +13,10 @@ const displayAllIssues=(issues)=>{
         const btnDiv = document.createElement('div');
         btnDiv.innerHTML =`
 
-           <div id="card" class="shadow-md rounded-lg">
+           <div  id="card" class="shadow-md rounded-lg">
                 <div class="flex items-center justify-between p-4">
                     <img src="assets/Open-Status.png" alt="">
-                    <button class="bg-[#FEECEC] text-red-500 px-5 rounded-full">${issue.priority}</button>
+                    <button onclick="my_modal_5.showModal()" class="bg-[#FEECEC] text-red-500 px-5 rounded-full">${issue.priority}</button>
                 </div>
                 <div class="space-y-2 px-4">
                     <h2 class="text-2xl font-semibold">${issue.title}</h2>
